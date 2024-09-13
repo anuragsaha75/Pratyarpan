@@ -1,0 +1,170 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 10;
+    padding-top: 13px;
+}
+
+.logo {
+    margin-left: 15px;
+    margin-top: 0px;
+}
+
+/* Logo */
+.logo img {
+   height: 80px ; width: 120px;
+}
+
+/* Hamburger Menu - Positioned at the top-left corner */
+.hamburger-menu {
+    position: absolute;
+    top: 10px; /* Adjust this value to move it up/down */
+    left: 10px; /* Adjust this value to move it left/right */
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 20; /* Ensure it's above other content */
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    left: 20px; /* Move to the left side */
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+    flex-direction: column;
+    z-index: 15; /* Dropdown appears above other content */
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.dropdown-menu a:hover {
+    color: #f4d03f;
+}
+
+.dropdown-menu.visible {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #f4d03f;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 200px 100px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,1.5)), url('patyarpan_banner.jpg') center/cover no-repeat;
+    color: #fff;
+}
+
+#hero h1 {
+    font-size: 8rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #f4d03f;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #f4d03f;
+    border: 2px solid #f4d03f;
+}
+
+/* Section Styling */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.section:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.social-links a {
+    color: #f4d03f;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
